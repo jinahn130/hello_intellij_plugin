@@ -1,0 +1,9 @@
+package com.example.hello
+
+import com.intellij.openapi.components.Service
+import com.intellij.openapi.project.Project
+
+@Service(Service.Level.PROJECT)
+class MyProjectService(private val project: Project) {
+    fun projectName(): String = project.name
+}

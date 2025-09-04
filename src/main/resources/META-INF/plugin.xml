@@ -1,0 +1,38 @@
+<idea-plugin>
+  <id>com.example.hello</id>
+  <name>Hello IntelliJ Plugin</name>
+  <vendor email="you@example.com" url="https://example.com">You</vendor>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <description><![CDATA[
+    A tiny demo plugin showing:
+    <ul>
+      <li>Actions (menu & editor popup)</li>
+      <li>Application and Project services</li>
+      <li>Notifications</li>
+    </ul>
+  ]]></description>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <notificationGroup id="hello.notifications"
+                       displayType="BALLOON"
+                       isLogByDefault="true"/>
+  </extensions>
+
+  <actions>
+    <action id="com.example.hello.SayHelloAction"
+            class="com.example.hello.SayHelloAction"
+            text="Say Hello"
+            description="Shows a greeting and service info">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+
+    <action id="com.example.hello.InsertHelloAction"
+            class="com.example.hello.InsertHelloAction"
+            text="Insert Hello"
+            description="Insert 'Hello, world!' at the caret">
+      <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+    </action>
+  </actions>
+</idea-plugin>
