@@ -13,3 +13,7 @@ Minimal IntelliJ Platform plugin with:
 
 _Note_: This project doesn't include the Gradle Wrapper jar. You can run with your local Gradle,
 or generate the wrapper via: `gradle wrapper` (or in IDE: Tools → Gradle → gradle wrapper).
+
+![Plugin Screenshot](/assets/1.png)
+![Plugin Screenshot](/assets/2.png)
+![Plugin Screenshot](/assets/3.png)
